@@ -12,9 +12,11 @@ Unlike traditional validators that reject invalid data, sdc4-validator implement
 
 ## Status
 
-This project is currently in the **planning phase** with implementation scheduled for **Q2 2026**.
+⚠️ **PLACEHOLDER RELEASE (v0.1.0) - NOT FUNCTIONAL**
 
-The repository serves as a placeholder and design specification for the future Rust implementation. For production use, please see:
+This package has been published to crates.io to reserve the name. The full implementation is scheduled for **Q2 2026** and will be released as **v4.0.0**.
+
+This repository serves as a placeholder and design specification for the future Rust implementation. For production use today, please see:
 - [sdcvalidator (Python)](https://github.com/SemanticDataCharter/sdcvalidator) - Production-ready Python implementation
 - [sdcvalidatorJS (TypeScript/JavaScript)](https://github.com/SemanticDataCharter/sdcvalidatorJS) - npm package for Node.js and browsers
 
@@ -29,9 +31,11 @@ The repository serves as a placeholder and design specification for the future R
 - **Zero Dependencies**: Minimal dependency footprint for easy integration
 - **Cross-Platform**: Support for Linux, macOS, and Windows
 
-## Planned Installation
+## Installation (Coming Q2 2026)
 
-Once released, installation will be available via Cargo:
+The package is published on crates.io as a placeholder. **Do not use v0.1.x in production.**
+
+Once the full implementation is released (v4.0.0), installation will be:
 
 ```bash
 cargo install sdc4-validator

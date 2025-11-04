@@ -1,6 +1,6 @@
 [package]
 name = "sdc4-validator"
-version = "4.0.0-alpha"
+version = "0.1.0"
 edition = "2021"
 rust-version = "1.70"
 authors = ["Axius SDC, Inc. <support@axius-sdc.com>"]

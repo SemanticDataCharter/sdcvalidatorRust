@@ -7,9 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-### Project Status
+### Planned for v4.0.0 (Q2-Q4 2026)
 
-This project is currently in the **planning phase** with implementation scheduled for Q2 2026.
+Full implementation of SDC4 validation framework.
 
 ### Planned for v4.0.0 (Q2-Q4 2026)
 
@@ -32,7 +32,21 @@ This project is currently in the **planning phase** with implementation schedule
 
 ## Version History
 
-### [4.0.0-alpha] - 2025-11-04
+### [0.1.0] - 2025-11-04
+
+#### Added
+- **PLACEHOLDER RELEASE** - Package published to crates.io to reserve the name
+- Basic crate structure and documentation
+- Planning documentation and roadmap
+- Links to production-ready implementations (Python and JavaScript/TypeScript)
+
+#### Notes
+- This release is **NOT FUNCTIONAL** and should not be used in production
+- Published to prevent name squatting on crates.io
+- Full implementation scheduled for Q2 2026 as v4.0.0
+- All public APIs are marked as deprecated with migration notes
+
+### [4.0.0-alpha] - 2025-11-04 (Repository Only)
 
 #### Added
 - Initial repository setup

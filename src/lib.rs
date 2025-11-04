@@ -43,6 +43,15 @@
 //!
 //! ## Status
 //!
+//! **PLACEHOLDER RELEASE - NOT FUNCTIONAL**
+//!
+//! This is a v0.1.0 placeholder to reserve the package name on crates.io.
+//! The full implementation is scheduled for Q2 2026 and will be released as v4.0.0.
+//!
+//! For production use today, please see:
+//! - [sdcvalidator (Python)](https://github.com/SemanticDataCharter/sdcvalidator) - Reference implementation
+//! - [@semanticdatacharter/validator](https://www.npmjs.com/package/@semanticdatacharter/validator) - JavaScript/TypeScript
+//!
 //! This library is currently in the planning phase with implementation scheduled for Q2 2026.
 
 #![warn(missing_docs)]
@@ -61,9 +70,33 @@
 // pub use recovery::{RecoveryOptions, ExceptionalValueType};
 
 // Placeholder for initial development
-/// Placeholder documentation
+
+/// Returns information about this placeholder release.
+///
+/// # Placeholder Release
+///
+/// This is v0.1.0 placeholder to reserve the `sdc4-validator` name on crates.io.
+/// The functional implementation will be released as v4.0.0 in Q2 2026.
+///
+/// # Example
+///
+/// ```
+/// use sdc4_validator::placeholder_info;
+///
+/// let info = placeholder_info();
+/// println!("{}", info);
+/// ```
+pub fn placeholder_info() -> &'static str {
+    "sdc4-validator v0.1.0 - Placeholder release (Implementation planned Q2 2026)"
+}
+
+#[deprecated(
+    since = "0.1.0",
+    note = "This is a placeholder release. Functional API will be available in v4.0.0 (Q2 2026)"
+)]
+/// Placeholder function - do not use.
 pub fn placeholder() {
-    println!("sdcvalidatorRust - Planning phase (Q2 2026)");
+    println!("sdc4-validator - Planning phase (Q2 2026)");
 }
 
 #[cfg(test)]
