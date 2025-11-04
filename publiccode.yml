@@ -1,0 +1,97 @@
+# This repository adheres to the publiccode.yml standard by including this
+# metadata file that makes public software easily discoverable.
+# More info at https://github.com/publiccodeyml/publiccode.yml
+
+publiccodeYmlVersion: '0.2'
+name: sdcvalidatorRust
+url: 'https://github.com/SemanticDataCharter/sdcvalidatorRust'
+landingURL: 'https://github.com/SemanticDataCharter/sdcvalidatorRust'
+releaseDate: '2025-11-04'
+softwareVersion: 4.0.0-alpha
+developmentStatus: planned
+platforms:
+  - linux
+  - mac
+  - windows
+
+softwareType: library
+
+categories:
+  - data-analytics
+  - data-collection
+
+description:
+  en:
+    localisedName: sdcvalidatorRust
+    genericName: XML Schema Validator
+    shortDescription: High-performance XML Schema validator with SDC4 support
+    longDescription: |
+      sdcvalidatorRust is a high-performance XML Schema validator implementing
+      the Semantic Data Charter (SDC4) specification in Rust. It provides fast
+      and memory-efficient validation of XML documents against XML Schema
+      definitions with specialized support for healthcare data quality management.
+
+      Unlike traditional validators that reject invalid data, sdcvalidatorRust
+      implements a "quarantine-and-tag" pattern that preserves problematic data
+      while injecting ISO 21090-based ExceptionalValue elements. This approach
+      enables comprehensive data quality assessment without data loss.
+
+      This implementation leverages Rust's performance and safety features to
+      provide optimal speed and memory efficiency for large-scale data validation
+      workflows.
+
+    features:
+      - High-performance native Rust implementation
+      - Full XML Schema 1.0 and 1.1 support
+      - SDC4 compliance with ExceptionalValue injection
+      - Recovery mode for data preservation
+      - Command-line interface and library API
+      - Cross-platform support (Linux, macOS, Windows)
+      - Streaming validation for large documents
+      - Minimal dependencies
+
+    documentation: 'https://github.com/SemanticDataCharter/sdcvalidatorRust/tree/main/docs'
+    apiDocumentation: 'https://docs.rs/sdcvalidator'
+
+legal:
+  license: MIT
+  mainCopyrightOwner: Semantic Data Charter
+  repoOwner: Semantic Data Charter
+
+maintenance:
+  type: community
+  contacts:
+    - name: Semantic Data Charter Team
+      email: support@axius-sdc.com
+
+localisation:
+  localisationReady: false
+  availableLanguages:
+    - en
+
+dependsOn:
+  open:
+    - name: Rust
+      versionMin: '1.70'
+
+it:
+  riuso:
+    codiceIPA: sdc
+
+intendedAudience:
+  scope:
+    - research
+    - healthcare
+    - science-and-technology
+
+  countries:
+    - us
+    - eu
+    - gb
+    - ca
+    - au
+
+roadmap: 'https://github.com/SemanticDataCharter/sdcvalidatorRust#development-roadmap'
+
+usedBy:
+  - Semantic Data Charter ecosystem

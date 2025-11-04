@@ -1,0 +1,47 @@
+[package]
+name = "sdcvalidator"
+version = "4.0.0-alpha"
+edition = "2021"
+rust-version = "1.70"
+authors = ["Semantic Data Charter <support@axius-sdc.com>"]
+license = "MIT"
+description = "High-performance XML Schema validator with Semantic Data Charter (SDC4) support"
+homepage = "https://github.com/SemanticDataCharter/sdcvalidatorRust"
+repository = "https://github.com/SemanticDataCharter/sdcvalidatorRust"
+documentation = "https://docs.rs/sdcvalidator"
+readme = "README.md"
+keywords = ["xml", "xsd", "validator", "schema", "sdc4"]
+categories = ["parsing", "data-structures", "development-tools"]
+
+[lib]
+name = "sdcvalidator"
+path = "src/lib.rs"
+
+[[bin]]
+name = "sdcvalidator"
+path = "src/main.rs"
+
+[dependencies]
+# Core dependencies will be added during implementation
+# quick-xml = "0.31"
+# roxmltree = "0.19"
+# thiserror = "1.0"
+# anyhow = "1.0"
+# clap = { version = "4.4", features = ["derive"] }
+
+[dev-dependencies]
+# criterion = "0.5"
+# proptest = "1.4"
+# pretty_assertions = "1.4"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+
+[profile.bench]
+inherits = "release"
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]

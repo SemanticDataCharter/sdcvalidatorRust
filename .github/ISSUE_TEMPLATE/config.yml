@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Question or Discussion
+    url: https://github.com/SemanticDataCharter/sdcvalidatorRust/discussions
+    about: Ask questions and discuss ideas with the community
+  - name: Security Vulnerability
+    url: mailto:security@axius-sdc.com
+    about: Report security vulnerabilities privately via email
+  - name: Documentation
+    url: https://github.com/SemanticDataCharter/sdcvalidatorRust/tree/main/docs
+    about: Read the documentation
