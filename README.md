@@ -168,7 +168,7 @@ This validator is part of the Semantic Data Charter ecosystem:
 
 - [SDCRM](https://github.com/SemanticDataCharter/SDCRM) - Reference model and specification
 - [sdcvalidator (Python)](https://github.com/SemanticDataCharter/sdcvalidator) - Reference implementation
-- [@sdc4/validator (JavaScript/TypeScript)](https://github.com/SemanticDataCharter/sdcvalidatorJS) - npm package
+- [@semanticdatacharter/validator (JavaScript/TypeScript)](https://github.com/SemanticDataCharter/sdcvalidatorJS) - npm package
 - [sdc4-validator (Rust)](https://github.com/SemanticDataCharter/sdcvalidatorRust) - This library (planned Q2 2026)
 - [SDC Obsidian Template](https://github.com/SemanticDataCharter/SDCObsidianTemplate) - Markdown templates
 

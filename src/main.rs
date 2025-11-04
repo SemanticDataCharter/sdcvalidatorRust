@@ -9,7 +9,7 @@ fn main() {
     println!("This project is currently in development.");
     println!("For production use, please see:");
     println!("  - sdcvalidator (Python): https://github.com/SemanticDataCharter/sdcvalidator");
-    println!("  - @sdc4/validator (JavaScript/TypeScript): https://github.com/SemanticDataCharter/sdcvalidatorJS");
+    println!("  - @semanticdatacharter/validator (JavaScript/TypeScript): https://github.com/SemanticDataCharter/sdcvalidatorJS");
     println!();
     println!("Planned usage:");
     println!("  sdc4-validate --schema schema.xsd --input data.xml");
