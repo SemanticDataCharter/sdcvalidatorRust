@@ -1,12 +1,14 @@
-# sdcvalidatorRust
+# sdc4-validator
 
 A high-performance XML Schema validator with Semantic Data Charter (SDC4) support, implemented in Rust.
 
+> **Developed and maintained by [Axius SDC, Inc.](https://axius-sdc.com)** in support of the Semantic Data Charter community.
+
 ## Overview
 
-**sdcvalidatorRust** is a Rust implementation of the SDC4 validation framework, providing fast and memory-efficient validation of XML documents against XML Schema definitions with specialized support for healthcare data quality management through the Semantic Data Charter specification.
+**sdc4-validator** is a Rust implementation of the SDC4 validation framework, providing fast and memory-efficient validation of XML documents against XML Schema definitions with specialized support for healthcare data quality management through the Semantic Data Charter specification.
 
-Unlike traditional validators that reject invalid data, sdcvalidatorRust implements a "quarantine-and-tag" pattern that preserves problematic data while injecting ISO 21090-based `ExceptionalValue` elements. This approach enables comprehensive data quality assessment without data loss.
+Unlike traditional validators that reject invalid data, sdc4-validator implements a "quarantine-and-tag" pattern that preserves problematic data while injecting ISO 21090-based `ExceptionalValue` elements. This approach enables comprehensive data quality assessment without data loss.
 
 ## Status
 
@@ -32,14 +34,14 @@ The repository serves as a placeholder and design specification for the future R
 Once released, installation will be available via Cargo:
 
 ```bash
-cargo install sdcvalidator
+cargo install sdc4-validator
 ```
 
 Or add to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-sdcvalidator = "4.0"
+sdc4-validator = "4.0"
 ```
 
 ## Planned Usage
@@ -48,19 +50,19 @@ sdcvalidator = "4.0"
 
 ```bash
 # Validate an XML file against a schema
-sdcvalidator validate --schema schema.xsd --input data.xml
+sdc4-validate --schema schema.xsd --input data.xml
 
 # Enable recovery mode (inject ExceptionalValues)
-sdcvalidator validate --schema schema.xsd --input data.xml --recovery
+sdc4-validate --schema schema.xsd --input data.xml --recovery
 
 # Output validation report
-sdcvalidator validate --schema schema.xsd --input data.xml --output report.json
+sdc4-validate --schema schema.xsd --input data.xml --output report.json
 ```
 
 ### Library Usage
 
 ```rust
-use sdcvalidator::{Validator, ValidationOptions};
+use sdc4_validator::{Validator, ValidationOptions};
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     // Create validator with schema
@@ -83,7 +85,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 ### Recovery Mode
 
 ```rust
-use sdcvalidator::{Validator, RecoveryOptions};
+use sdc4_validator::{Validator, RecoveryOptions};
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     let validator = Validator::from_file("schema.xsd")?;
@@ -165,9 +167,10 @@ For security concerns or vulnerability reports, please see our [Security Policy]
 This validator is part of the Semantic Data Charter ecosystem:
 
 - [SDCRM](https://github.com/SemanticDataCharter/SDCRM) - Reference model and specification
-- [sdcvalidator](https://github.com/SemanticDataCharter/sdcvalidator) - Python implementation
-- [sdcvalidatorJS](https://github.com/SemanticDataCharter/sdcvalidatorJS) - TypeScript/JavaScript implementation
-- [sdc-xml2graph](https://github.com/SemanticDataCharter/sdc-xml2graph) - Knowledge graph creation tool
+- [sdcvalidator (Python)](https://github.com/SemanticDataCharter/sdcvalidator) - Reference implementation
+- [@sdc4/validator (JavaScript/TypeScript)](https://github.com/SemanticDataCharter/sdcvalidatorJS) - npm package
+- [sdc4-validator (Rust)](https://github.com/SemanticDataCharter/sdcvalidatorRust) - This library (planned Q2 2026)
+- [SDC Obsidian Template](https://github.com/SemanticDataCharter/SDCObsidianTemplate) - Markdown templates
 
 ## License
 
@@ -182,6 +185,14 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Issues: [GitHub Issues](https://github.com/SemanticDataCharter/sdcvalidatorRust/issues)
 - Discussions: [GitHub Discussions](https://github.com/SemanticDataCharter/sdcvalidatorRust/discussions)
 - Email: support@axius-sdc.com
+
+## Sponsors
+
+This project is developed and maintained by **[Axius SDC, Inc.](https://axius-sdc.com)** in support of the Semantic Data Charter community.
+
+### Trademarks
+
+"Semantic Data Charter" and "SDC4" are trademarks of Axius SDC, Inc.
 
 ## Acknowledgments
 

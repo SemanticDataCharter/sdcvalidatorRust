@@ -1,24 +1,24 @@
 [package]
-name = "sdcvalidator"
+name = "sdc4-validator"
 version = "4.0.0-alpha"
 edition = "2021"
 rust-version = "1.70"
-authors = ["Semantic Data Charter <support@axius-sdc.com>"]
+authors = ["Axius SDC, Inc. <support@axius-sdc.com>"]
 license = "MIT"
 description = "High-performance XML Schema validator with Semantic Data Charter (SDC4) support"
 homepage = "https://github.com/SemanticDataCharter/sdcvalidatorRust"
 repository = "https://github.com/SemanticDataCharter/sdcvalidatorRust"
-documentation = "https://docs.rs/sdcvalidator"
+documentation = "https://docs.rs/sdc4-validator"
 readme = "README.md"
 keywords = ["xml", "xsd", "validator", "schema", "sdc4"]
 categories = ["parsing", "data-structures", "development-tools"]
 
 [lib]
-name = "sdcvalidator"
+name = "sdc4_validator"
 path = "src/lib.rs"
 
 [[bin]]
-name = "sdcvalidator"
+name = "sdc4-validate"
 path = "src/main.rs"
 
 [dependencies]
@@ -45,3 +45,6 @@ inherits = "release"
 [package.metadata.docs.rs]
 all-features = true
 rustdoc-args = ["--cfg", "docsrs"]
+
+[package.metadata.funding]
+url = "https://axius-sdc.com"
