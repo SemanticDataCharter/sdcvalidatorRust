@@ -12,26 +12,26 @@
 //! a "quarantine-and-tag" pattern that preserves problematic data while injecting
 //! ISO 21090-based `ExceptionalValue` elements.
 //!
-//! ## Quick Start
+//! ## Quick Start (Coming in v4.0.0)
 //!
-//! ```rust,no_run
+//! ```text
 //! use sdc4_validator::{Validator, ValidationOptions};
 //!
-//! # fn main() -> Result<(), Box<dyn std::error::Error>> {
-//! // Create validator with schema
-//! let validator = Validator::from_file("schema.xsd")?;
+//! fn main() -> Result<(), Box<dyn std::error::Error>> {
+//!     // Create validator with schema
+//!     let validator = Validator::from_file("schema.xsd")?;
 //!
-//! // Validate XML document
-//! let xml = std::fs::read_to_string("data.xml")?;
-//! let result = validator.validate(&xml)?;
+//!     // Validate XML document
+//!     let xml = std::fs::read_to_string("data.xml")?;
+//!     let result = validator.validate(&xml)?;
 //!
-//! if result.is_valid() {
-//!     println!("Document is valid!");
-//! } else {
-//!     println!("Validation errors: {:?}", result.errors());
+//!     if result.is_valid() {
+//!         println!("Document is valid!");
+//!     } else {
+//!         println!("Validation errors: {:?}", result.errors());
+//!     }
+//!     Ok(())
 //! }
-//! # Ok(())
-//! # }
 //! ```
 //!
 //! ## Features
